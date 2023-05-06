@@ -6,51 +6,36 @@ import { BsInstagram } from 'react-icons/bs'
 export default function Contact() {
   return (
     <>
-      <Box id='contact'  >
-
+      <Box id='contact'>
         <Box pt={50} >
-          <Grid p={0} m={0} sx={(theme) => ({
-            background: theme.colors.primary[0]
-          })}>
+          <Grid p={0} m={0} sx={(theme) => ({background: theme.colors.primary[0]})}>
             <Grid.Col p={0} m={0} md={6}>
               <Box pt="lg">
-
                 <Image src={m3} alt="" />
               </Box>
-
-
             </Grid.Col>
             <Grid.Col p={0} m={0} md={6}>
               <Center>
                 <Box p={100} sx={(theme) => ({ textAlign: "justify", color: "#fff" })}>
-
                   <Text sx={(theme) => ({ fontSize: "40px", fontWeight: 700, color: theme.colors.primary[1] })}>
-
                     Contact
                   </Text>
-
-
-
                   <Text sx={(theme) => ({ fontSize: "25px", })}>
                     Representation
                   </Text>
-
                   <Box mt="lg"><Text><b>Manager</b></Text>
                     <List spacing="2px" listStyleType='none' sx={(theme) => ({ color: "#fff" })}>
                       <List.Item >Bruce Robertson </List.Item>
                       <List.Item>Email - info@mysite.com</List.Item>
                       <List.Item>Tel - 123-456-7890</List.Item>
                     </List>
-
                   </Box>
-
                   <Box mt="lg"><Text><b>Commercial Agent</b></Text>
                     <List spacing="2px" listStyleType='none' sx={(theme) => ({ color: "#fff" })}>
                       <List.Item>Magnum - Steven Macfee</List.Item>
                       <List.Item>Email - info@mysite.com</List.Item>
                       <List.Item>Tel - 123-456-7890</List.Item>
                     </List>
-
                   </Box>
                   <Box mt="lg"><Text><b>SF Agent</b></Text>
                     <List spacing="2px" listStyleType='none' sx={(theme) => ({ color: "#fff" })}   >
@@ -75,8 +60,6 @@ export default function Contact() {
                       </Flex>
                     </Group>
                   </Box>
-
-
                 </Box>
               </Center>
             </Grid.Col>
@@ -89,9 +72,7 @@ export default function Contact() {
             </Center>
           </Container>
         </Footer>
-
       </Box>
-
     </>
   )
 }
