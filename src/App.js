@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import { MantineProvider } from '@mantine/core';
 import './App.css';
+import Bio from './component/Bio';
+// import { useEffect } from 'react';
+import VideoPlayer from './component/VideoPlayer';
+import Gallery from './component/Gallery';
+import Contact from './component/Contact';
+import ScrollButton from './component/ScrollTop';
 
 function App() {
+  // useEffect(() => {
+  //   document.body.style.overflow = 'hidden';
+  //   return () => {
+  //     document.body.style.overflow = 'auto';
+  //   };
+  // }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <MantineProvider
+        theme={{
+          colors: { primary: ["#015761", "#f7dc4f", "#fff"] }
+        }}
+
+
+      >
+
+        <Bio />
+        <VideoPlayer />
+        <Gallery />
+        <Contact />
+        <ScrollButton />
+      </MantineProvider>
+
+    </>
   );
 }
 
